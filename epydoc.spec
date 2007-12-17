@@ -9,7 +9,6 @@ Release: %{release}
 Source0: http://prdownloads.dl.sourceforge.net/sourceforge/epydoc/%{name}-%{version}.tar.bz2
 License: IBM Open Source License
 Group: Development/Python
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArchitectures: noarch
 Url: http://epydoc.sourceforge.net/
 BuildRequires: python-devel
