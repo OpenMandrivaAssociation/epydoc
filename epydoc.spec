@@ -1,12 +1,12 @@
 %define name epydoc
-%define version 2.1
-%define release %mkrel 5
+%define version 3.0
+%define release %mkrel 1
 
 Summary: Edward Loper's API Documentation Generation Tool
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://prdownloads.dl.sourceforge.net/sourceforge/epydoc/%{name}-%{version}.tar.bz2
+Source0: http://prdownloads.dl.sourceforge.net/sourceforge/epydoc/%{name}-%{version}.tar.gz
 License: IBM Open Source License
 Group: Development/Python
 BuildRoot: %{_tmppath}/%{name}-buildroot
@@ -41,9 +41,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc *.TXT doc/
+%doc *.txt doc/
 %_bindir/epydoc
 %_bindir/epydocgui
+%_bindir/apirst2html.py
 %_mandir/man1/*
 %py_puresitedir/*
 
