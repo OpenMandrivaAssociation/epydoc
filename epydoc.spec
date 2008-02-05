@@ -1,5 +1,5 @@
 %define name epydoc
-%define version 3.0
+%define version 3.0.1
 %define release %mkrel 1
 
 Summary: Edward Loper's API Documentation Generation Tool
