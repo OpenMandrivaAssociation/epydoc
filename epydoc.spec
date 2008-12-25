@@ -1,6 +1,6 @@
 %define name epydoc
 %define version 3.0.1
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary: Edward Loper's API Documentation Generation Tool
 Name: %{name}
@@ -12,7 +12,7 @@ Group: Development/Python
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArchitectures: noarch
 Url: http://epydoc.sourceforge.net/
-BuildRequires: python-devel
+%py_requires -d
 Requires: tkinter
 
 %description
