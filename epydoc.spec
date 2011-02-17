@@ -1,12 +1,14 @@
 %define name epydoc
 %define version 3.0.1
-%define release %mkrel 6
+%define release %mkrel 7
 
 Summary: Edward Loper's API Documentation Generation Tool
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://prdownloads.dl.sourceforge.net/sourceforge/epydoc/%{name}-%{version}.tar.gz
+# https://qa.mandriva.com/show_bug.cgi?id=62543
+Patch0: epydoc_restructuredtext_Bug_62543.patch
 License: IBM Open Source License
 Group: Development/Python
 BuildRoot: %{_tmppath}/%{name}-buildroot
@@ -26,6 +28,7 @@ plaintext.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 python setup.py build
