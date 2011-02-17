@@ -1,6 +1,6 @@
 %define name epydoc
 %define version 3.0.1
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary: Edward Loper's API Documentation Generation Tool
 Name: %{name}
@@ -16,6 +16,7 @@ BuildArchitectures: noarch
 Url: http://epydoc.sourceforge.net/
 %py_requires -d
 Requires: tkinter
+Requires: python-docutils
 
 %description
 Epydoc is a tool for generating API documentation for Python modules,
