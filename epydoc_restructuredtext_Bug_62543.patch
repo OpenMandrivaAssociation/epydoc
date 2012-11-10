@@ -1,0 +1,16 @@
+diff -p -up epydoc-3.0.1/epydoc/markup/restructuredtext.py.orig epydoc-3.0.1/epydoc/markup/restructuredtext.py
+--- epydoc-3.0.1/epydoc/markup/restructuredtext.py.orig	2011-02-17 12:03:39.000000000 +0100
++++ epydoc-3.0.1/epydoc/markup/restructuredtext.py	2011-02-17 12:05:02.000000000 +0100
+@@ -304,10 +304,10 @@ class _SummaryExtractor(NodeVisitor):
+         # Extract the first sentence.
+         for child in node:
+             if isinstance(child, docutils.nodes.Text):
+-                m = self._SUMMARY_RE.match(child.data)
++                m = self._SUMMARY_RE.match(child)
+                 if m:
+                     summary_pieces.append(docutils.nodes.Text(m.group(1)))
+-                    other = child.data[m.end():]
++                    other = child[m.end():]
+                     if other and not other.isspace():
+                         self.other_docs = True
+                     break
