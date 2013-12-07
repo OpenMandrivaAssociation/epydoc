@@ -1,7 +1,7 @@
 Summary:	Edward Loper's API Documentation Generation Tool
 Name:		epydoc
 Version:	3.0.1
-Release:	14
+Release:	15
 License:	IBM Open Source License
 Group:		Development/Python
 BuildArch:	noarch
