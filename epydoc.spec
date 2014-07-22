@@ -9,8 +9,8 @@ Url:		http://epydoc.sourceforge.net/
 Source0:	http://prdownloads.dl.sourceforge.net/sourceforge/epydoc/%{name}-%{version}.tar.gz
 # https://qa.mandriva.com/show_bug.cgi?id=62543
 Patch0:		epydoc_restructuredtext_Bug_62543.patch
-
-%py_requires -d
+Requires:	python(abi) = 2.7
+#%py_requires -d
 Requires:	python-docutils
 Requires:	tkinter
 
