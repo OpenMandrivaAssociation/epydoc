@@ -40,5 +40,5 @@ install -m 644 man/*.1 %{buildroot}%{_mandir}/man1
 %{_bindir}/epydocgui
 %{_bindir}/apirst2html.py
 %{_mandir}/man1/*
-%{py_puresitedir}/*
+%{py2_puresitedir}/*
 
