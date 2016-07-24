@@ -1,7 +1,7 @@
 Summary:	Edward Loper's API Documentation Generation Tool
 Name:		epydoc
 Version:	3.0.1
-Release:	19
+Release:	20
 License:	IBM Open Source License
 Group:		Development/Python
 BuildArch:	noarch
@@ -27,10 +27,10 @@ plaintext.
 %apply_patches
 
 %build
-python setup.py build
+python2 setup.py build
 
 %install
-python setup.py install --root=%{buildroot}
+python2 setup.py install --root=%{buildroot}
 mkdir -p %{buildroot}%{_mandir}/man1
 install -m 644 man/*.1 %{buildroot}%{_mandir}/man1
 
