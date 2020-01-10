@@ -24,7 +24,7 @@ plaintext.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 python2 setup.py build
