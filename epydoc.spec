@@ -1,7 +1,7 @@
 Summary:	Edward Loper's API Documentation Generation Tool
 Name:		epydoc
 Version:	3.0.1
-Release:	22
+Release:	1
 License:	IBM Open Source License
 Group:		Development/Python
 BuildArch:	noarch
@@ -10,8 +10,8 @@ Source0:	http://prdownloads.dl.sourceforge.net/sourceforge/epydoc/%{name}-%{vers
 # https://qa.mandriva.com/show_bug.cgi?id=62543
 Patch0:		epydoc_restructuredtext_Bug_62543.patch
 
-BuildRequires: python-devel
-Requires:	python-docutils
+BuildRequires: python2-devel
+Requires:	python2-docutils
 Requires:	tkinter
 
 %description
