@@ -5,7 +5,7 @@ Release:	2
 License:	IBM Open Source License
 Group:		Development/Python
 BuildArch:	noarch
-Url:		http://epydoc.sourceforge.net/
+Url:		https://epydoc.sourceforge.net/
 Source0:	http://prdownloads.dl.sourceforge.net/sourceforge/epydoc/%{name}-%{version}.tar.gz
 # https://qa.mandriva.com/show_bug.cgi?id=62543
 Patch0:		epydoc_restructuredtext_Bug_62543.patch
